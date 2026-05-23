@@ -222,7 +222,7 @@ export default function SpendForm() {
       <Button
         onClick={handleSubmit}
         disabled={loading}
-        className="w-full py-6 text-lg font-semibold bg-slate-900 hover:bg-slate-700"
+        className="w-full py-6 text-lg font-semibold bg-slate-900 hover:bg-slate-700 text-white"
       >
         {loading ? (
           <>
