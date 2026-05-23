@@ -1,3 +1,5 @@
+# DEVLOG
+
 ## Day 1 — 2026-05-21
 
 **Hours worked:** 4
@@ -10,6 +12,8 @@
 
 **Plan for tomorrow:** Build the spend input form (MVP #1) with all 8 tools, plan selectors, seat counts, and localStorage persistence. Start Supabase setup and database schema.
 
+---
+
 ## Day 2 — 2026-05-22
 
 **Hours worked:** 8
@@ -21,3 +25,73 @@
 **Blockers / what I'm stuck on:** Vercel deployment routing broken (bom1 error) — switching to Netlify. Still need Anthropic API key for live AI summaries. Need to complete user interviews.
 
 **Plan for tomorrow:** Get Netlify deploy working and live URL confirmed. Fill in all required markdown files (PRICING_DATA.md, ARCHITECTURE.md, GTM.md, ECONOMICS.md, LANDING_COPY.md, METRICS.md, PROMPTS.md). Start user interviews — need 3 real conversations.
+
+---
+
+## Day 3 — 2026-05-23
+
+**Hours worked:** 6
+
+**What I did:** Resolved Vercel deployment failure by switching to Netlify — added @netlify/plugin-nextjs and netlify.toml, deployed successfully to https://spendlens-credex.netlify.app. Added all environment variables to Netlify via the import UI (Supabase URL, anon key, service role key, Resend API key, updated app URL to production). Committed netlify.toml to the repo. Rewrote all required markdown files to match assignment spec exactly: PRICING_DATA.md with source URLs and verified dates for all 8 tools, ARCHITECTURE.md with Mermaid system diagram and data flow, GTM.md with specific target persona and 30-day first-100-users plan, ECONOMICS.md with Credex lead value model and $1M ARR path, LANDING_COPY.md with hero copy and 5-question FAQ, METRICS.md with north star and pivot triggers, PROMPTS.md with full AI summary prompt and iteration notes, REFLECTION.md answering all 5 required questions, README.md with 5 decisions section and quick start. Confirmed live URL loads correctly in browser.
+
+**What I learned:** The assignment's ECONOMICS.md specifically asks about Credex lead value, not generic SaaS metrics — the framing matters. Environment variables in Netlify don't apply to existing deploys — must redeploy after setting them. Mermaid diagrams render inline on GitHub without any plugin, just need the ```mermaid code fence.
+
+**Blockers / what I'm stuck on:** Still need Anthropic API key to enable live AI summaries (fallback template is working). Need to complete 3 real user interviews — have reached out to people, waiting on responses. Need to run Lighthouse on deployed URL and add screenshots to README.
+
+**Plan for tomorrow:** Get Anthropic API key from console.anthropic.com and wire it up in the codebase and Netlify env vars. Complete 3 user interviews. Run Lighthouse audit on https://spendlens-credex.netlify.app and fix any score below threshold. Take 3 screenshots of the live app and add to README.
+
+---
+
+## Day 4 — YYYY-MM-DD
+
+**Hours worked:**
+
+**What I did:**
+
+**What I learned:**
+
+**Blockers / what I'm stuck on:**
+
+**Plan for tomorrow:**
+
+---
+
+## Day 5 — YYYY-MM-DD
+
+**Hours worked:**
+
+**What I did:**
+
+**What I learned:**
+
+**Blockers / what I'm stuck on:**
+
+**Plan for tomorrow:**
+
+---
+
+## Day 6 — YYYY-MM-DD
+
+**Hours worked:**
+
+**What I did:**
+
+**What I learned:**
+
+**Blockers / what I'm stuck on:**
+
+**Plan for tomorrow:**
+
+---
+
+## Day 7 — YYYY-MM-DD
+
+**Hours worked:**
+
+**What I did:**
+
+**What I learned:**
+
+**Blockers / what I'm stuck on:**
+
+**Plan for tomorrow:** Submitted.
