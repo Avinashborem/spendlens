@@ -216,7 +216,7 @@ export default function AuditResults({ auditResult, auditDbId }: Props) {
                   : 'We\'ll notify you when new optimisation opportunities apply to your stack.'}
               </p>
               {!showLeadForm ? (
-                <Button onClick={() => setShowLeadForm(true)} className="bg-slate-900 hover:bg-slate-700">
+                <Button onClick={() => setShowLeadForm(true)} className="bg-slate-900 hover:bg-slate-700 text-white">
                   Send me the report →
                 </Button>
               ) : (
@@ -235,7 +235,7 @@ export default function AuditResults({ auditResult, auditDbId }: Props) {
                       <Input value={role} onChange={e => setRole(e.target.value)} placeholder="Engineering Manager" className="mt-1" />
                     </div>
                   </div>
-                  <Button onClick={submitLead} disabled={submitting} className="bg-slate-900 hover:bg-slate-700">
+                  <Button onClick={submitLead} disabled={submitting} className="bg-slate-900 hover:bg-slate-700 text-white">
                     {submitting ? 'Sending...' : 'Send report →'}
                   </Button>
                 </div>
