@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { toast } from 'sonner'
+import Link from 'next/link'
 import { Copy, Check, TrendingDown, AlertTriangle, CheckCircle, Info, ExternalLink } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
@@ -91,12 +92,12 @@ export default function AuditResults({ auditResult, auditDbId }: Props) {
       {/* Header */}
       <header className="bg-white border-b border-slate-200">
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
-          <a href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <div className="w-8 h-8 bg-slate-900 rounded-lg flex items-center justify-center">
               <span className="text-white text-sm font-bold">S</span>
             </div>
             <span className="font-semibold text-slate-900">SpendLens</span>
-          </a>
+          </Link>
           <button onClick={copyShareUrl} className="flex items-center gap-2 text-sm text-slate-600 hover:text-slate-900">
             {copied ? <Check size={16} /> : <Copy size={16} />}
             Share this audit
@@ -119,12 +120,12 @@ export default function AuditResults({ auditResult, auditDbId }: Props) {
                 <span className="text-2xl text-slate-400">/mo</span>
               </h1>
               <p className="text-slate-400 text-lg">
-                in potential savings — that's <strong className="text-white">${totalAnnualSavings.toFixed(0)}/year</strong>
+                in potential savings — that&apos;s <strong className="text-white">${totalAnnualSavings.toFixed(0)}/year</strong>
               </p>
             </>
           ) : (
             <>
-              <h1 className="text-4xl font-bold mb-2">You're spending well ✓</h1>
+              <h1 className="text-4xl font-bold mb-2">You&apos;re spending well ✓</h1>
               <p className="text-slate-400 text-lg">No significant optimisations found for your current setup.</p>
             </>
           )}
@@ -212,8 +213,8 @@ export default function AuditResults({ auditResult, auditDbId }: Props) {
               </h2>
               <p className="text-slate-500 text-sm mb-4">
                 {hasAnySavings
-                  ? 'We\'ll email you the full report. For high-savings cases, Credex will reach out about discounted credits.'
-                  : 'We\'ll notify you when new optimisation opportunities apply to your stack.'}
+                  ? "We'll email you the full report. For high-savings cases, Credex will reach out about discounted credits."
+                  : "We'll notify you when new optimisation opportunities apply to your stack."}
               </p>
               {!showLeadForm ? (
                 <Button onClick={() => setShowLeadForm(true)} className="bg-slate-900 hover:bg-slate-700 text-white">
@@ -263,9 +264,9 @@ export default function AuditResults({ auditResult, auditDbId }: Props) {
         </Card>
 
         <div className="text-center">
-          <a href="/" className="text-sm text-slate-500 hover:text-slate-900">
+          <Link href="/" className="text-sm text-slate-500 hover:text-slate-900">
             ← Run a new audit
-          </a>
+          </Link>
         </div>
       </div>
     </div>

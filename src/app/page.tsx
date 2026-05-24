@@ -26,7 +26,7 @@ export default function Home() {
           Is your team overspending on AI tools?
         </h1>
         <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
-          Enter your current AI subscriptions and get an instant audit — where you're overspending, what to switch, and exactly how much you'd save.
+          Enter your current AI subscriptions and get an instant audit — where you&apos;re overspending, what to switch, and exactly how much you&apos;d save.
         </p>
         <div className="flex items-center justify-center gap-6 text-sm text-slate-500">
           <span>✓ Cursor</span>

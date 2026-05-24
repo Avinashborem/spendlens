@@ -33,9 +33,12 @@ export default function SpendForm() {
     if (saved) {
       try {
         const parsed = JSON.parse(saved)
-        if (parsed.tools) setTools(parsed.tools)
-        if (parsed.teamSize) setTeamSize(parsed.teamSize)
-        if (parsed.useCase) setUseCase(parsed.useCase)
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        if (parsed.tools) setTools(parsed.tools as typeof tools)
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        if (parsed.teamSize) setTeamSize(parsed.teamSize as number)
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        if (parsed.useCase) setUseCase(parsed.useCase as UseCase)
       } catch {}
     }
   }, [])
