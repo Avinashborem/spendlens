@@ -152,17 +152,17 @@ export default function AuditResults({ auditResult, auditDbId }: Props) {
                 <p className="text-green-800 text-sm mb-3">
                   With ${totalMonthlySavings.toFixed(0)}/month in potential savings, you may be able to capture even more through Credex — the marketplace for discounted AI infrastructure credits sourced from companies that overforecast.
                 </p>
-                <a>
+                <a
                   href="https://credex.rocks"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-sm font-medium text-green-700 hover:text-green-900"
-                
+                >
                   Learn about Credex <ExternalLink size={14} />
                 </a>
               </div>
             </div>
-        </Card>
+          </Card>
         )}
 
         {/* Per-tool breakdown */}
