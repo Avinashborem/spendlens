@@ -158,7 +158,7 @@ export default function AuditResults({ auditResult, auditDbId }: Props) {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-sm font-medium text-green-700 hover:text-green-900"
                 
-                  {'Learn about Credex'} <ExternalLink size={14} />
+                  Learn about Credex <ExternalLink size={14} />
                 </a>
               </div>
             </div>
