@@ -50,7 +50,7 @@ export default function AuditResults({ auditResult, auditDbId }: Props) {
   const [submitting, setSubmitting] = useState(false)
 
   const { toolResults, totalMonthlySavings, totalAnnualSavings, aiSummary, shareId } = auditResult
-  const isHighSavings = totalMonthlySavings > 500
+  const isHighSavings = totalMonthlySavings > 200
   const hasAnySavings = totalMonthlySavings > 0
   const shareUrl = typeof window !== 'undefined'
     ? `${window.location.origin}/audit/${shareId}`
