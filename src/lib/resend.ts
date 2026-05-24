@@ -17,7 +17,7 @@ export async function sendAuditConfirmation({
 
   try {
     await resend.emails.send({
-      from: 'SpendLens <noreply@spendlens.dev>',
+      from: 'SpendLens <onboarding@resend.dev>',
       to: email,
       subject: `Your AI Spend Audit — $${totalMonthlySavings.toFixed(0)}/mo in potential savings`,
       html: `
