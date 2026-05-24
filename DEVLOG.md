@@ -42,18 +42,17 @@
 
 ---
 
-## Day 4 — YYYY-MM-DD
+## Day 4 — 2026-05-24
 
-**Hours worked:**
+**Hours worked:** 3
 
-**What I did:**
+**What I did:** Verified Open Graph and Twitter Card meta tags are correctly implemented on shareable audit result pages — title and description dynamically pull real savings numbers from Supabase. Added .env.example file so the repo is self-documenting for setup. Ran Lighthouse audit on deployed URL — Performance 95, Accessibility 94, Best Practices 100, SEO 91, all above required thresholds. Fixed button text visibility issue on submit and lead capture buttons (text-white class missing from shadcn Button override). Confirmed all 8 tests still passing and CI green.
 
-**What I learned:**
+**What I learned:** Next.js generateMetadata with async params works cleanly for dynamic OG tags — the savings number renders correctly in link previews. shadcn Button component requires explicit text-white when overriding background color, it doesn't inherit from the default variant.
 
-**Blockers / what I'm stuck on:**
+**Blockers / what I'm stuck on:** Need to verify the AI summary is generating correctly on the live URL with the new Anthropic API key. Anthropic account has $0 balance so API calls will fail gracefully to fallback — documenting this clearly.
 
-**Plan for tomorrow:**
-
+**Plan for tomorrow:** Final review of all markdown files. Run the git log day check. Prepare submission form response. Do a full end-to-end test on the live URL.
 ---
 
 ## Day 5 — YYYY-MM-DD
