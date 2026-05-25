@@ -55,17 +55,17 @@
 **Plan for tomorrow:** Final review of all markdown files. Run the git log day check. Prepare submission form response. Do a full end-to-end test on the live URL.
 ---
 
-## Day 5 — YYYY-MM-DD
+## Day 5 — 2026-05-25
 
-**Hours worked:**
+**Hours worked:** 4
 
-**What I did:**
+**What I did:** Fixed all CI lint errors — escaped apostrophes in JSX, replaced <a> tags with Next.js Link component, added eslint-disable comments for setState-in-effect in localStorage hook. Added .netlify to eslint ignore to stop build artifacts being linted. CI is now green on latest commit. Fixed Resend sender domain from unverified spendlens.dev to onboarding@resend.dev — email delivery now working end-to-end. Fixed Credex CTA anchor tag JSX syntax error that was rendering raw HTML attributes as text. Lowered Credex CTA threshold from $500 to $200 so more audits trigger it. Verified full end-to-end flow on live URL — form submission, results page, AI summary fallback, Credex CTA, email delivery, shareable link all working. Confirmed Lighthouse scores: Performance 95, Accessibility 94, Best Practices 100, SEO 91.
 
-**What I learned:**
+**What I learned:** ESLint in Next.js projects lints everything in the project directory including build artifacts in .netlify unless explicitly ignored. &apos; only works in JSX text nodes, not inside JavaScript string literals — use double quotes instead. next/link Link component must be used instead of <a> for internal navigation in Next.js.
 
-**Blockers / what I'm stuck on:**
+**Blockers / what I'm stuck on:** REFLECTION.md and TESTS.md were found to be 0 bytes — replaced with correct content. Anthropic API has $0 balance so AI summaries fall back to template — fallback working correctly.
 
-**Plan for tomorrow:**
+**Plan for tomorrow:** Final review of all files. Fill DEVLOG Day 6. Check git log shows 5 distinct days. Prepare submission form response.
 
 ---
 
